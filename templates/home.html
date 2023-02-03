@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yangiliklar</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+  <h1>Mashina sozlik</h1>
+  <table>
+ <tr>
+    <th>rasimlar</th>
+    <th>rusumi</th>
+    <th>texnikas</th>
+  </tr>
+    {%for post in object_list %}
+  <tr>
+    <td><img src={{post.imge}} alt="sad"></td>
+    <td>{{post.title}}</td>
+    <td>{{post.text}}</td>
+  </tr>
+  {% endfor %}
+</table>
+</body>
+</html>
